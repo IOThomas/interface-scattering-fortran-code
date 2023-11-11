@@ -21,4 +21,9 @@ module constants
 
     integer, parameter, public :: real12 = real128
 
+    real(real12), parameter, public :: zero = 0.0_real12, one = 1.0_real12, two = 2.0_real12
+    complex(real12), parameter, public :: czero=(zero, zero)
+
+    real(real12), parameter, public:: pi = two*acos(zero)
+
 end module
