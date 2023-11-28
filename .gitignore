@@ -1,3 +1,4 @@
 *~
 *.mod
 *.smod
+src/main/functional.f90
