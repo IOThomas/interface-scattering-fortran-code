@@ -26,7 +26,7 @@ contains
         metric = sqrt(a**2 + b**2)
     end function
 
-    elemental real(real12) function E_Delta2(nu, burgers_vector, q_x, q_y)
+    pure real(real12) function E_Delta2(nu, burgers_vector, q_x, q_y)
         real(real12), intent(in):: nu, burgers_vector, q_x, q_y
 
         complex(real12) :: E_Delta
@@ -42,7 +42,7 @@ contains
 
     end function
 
-    elemental real(real12) function E_S2(nu, burgers_vector, q_x, q_y)
+    pure real(real12) function E_S2(nu, burgers_vector, q_x, q_y)
         real(real12), intent(in):: nu, burgers_vector, q_x, q_y
 
         complex(real12) :: E_S
@@ -57,7 +57,7 @@ contains
 
     end function
 
-    elemental real(real12) function E_R2(nu, burgers_vector, q_x, q_y)
+    pure real(real12) function E_R2(nu, burgers_vector, q_x, q_y)
         real(real12), intent(in):: nu, burgers_vector, q_x, q_y
 
         complex(real12) :: E_R
