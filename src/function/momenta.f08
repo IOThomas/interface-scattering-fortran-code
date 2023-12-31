@@ -28,7 +28,7 @@ contains
     end function
 
     pure real(real12) function q_m(m, distance)
-        integer(real12), intent(in) :: m
+        integer, intent(in) :: m
         real(real12), intent(in) :: distance
 
         q_m = two*pi*real(m, real12)/distance
